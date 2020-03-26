@@ -157,12 +157,12 @@ public class GlavnaController {
     }
 
 
-    public void clickStampa(ActionEvent actionEvent){
+   /* public void clickStampa(ActionEvent actionEvent){
         try {
             new GradoviReport().showReport(dao.getConnection());
         } catch (JRException e1) {
             e1.printStackTrace();
         }
 
-    }
+    } */
 }

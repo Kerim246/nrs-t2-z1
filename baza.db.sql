@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `grad` (
 	`naziv`	TEXT,
 	`broj_stanovnika`	INTEGER,
 	`drzava`	INTEGER,
-	`postanskiBroj` INTEGER,
+	`postanski_broj` INTEGER,
 	FOREIGN KEY(`drzava`) REFERENCES `drzava`,
 	PRIMARY KEY(`id`)
 );
@@ -13,6 +13,9 @@ INSERT INTO `grad` VALUES (2,'London',8825000,2,71000);
 INSERT INTO `grad` VALUES (3,'Beč',1899055,3, 71000);
 INSERT INTO `grad` VALUES (4,'Manchester',545500,2, 71000);
 INSERT INTO `grad` VALUES (5,'Graz',280200,3, 71000);
+INSERT INTO `grad` VALUES(6,'Liverpool',1000000,71000);
+INSERT INTO `grad` VALUES(7,'York',10000,71000);
+
 CREATE TABLE IF NOT EXISTS `drzava` (
 	`id`	INTEGER,
 	`naziv`	TEXT,
