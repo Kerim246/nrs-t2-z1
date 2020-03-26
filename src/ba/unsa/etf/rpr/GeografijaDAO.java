@@ -18,6 +18,10 @@ public class GeografijaDAO {
         if (instance == null) instance = new GeografijaDAO();
         return instance;
     }
+
+    public Connection getConnection(){
+        return conn;
+    }
     private GeografijaDAO() {
         try {
             conn = DriverManager.getConnection("jdbc:sqlite:baza.db");
